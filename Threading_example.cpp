@@ -7,12 +7,13 @@ threading features available.
 */
 void do_loop(int data){
     for (int i = 0; i < 5; ++i) {
-        std::cout << "Thread 1 executing\n";
+        std::cout << "Thread Do LOOP executing\n";
         ++data;
         std::this_thread::sleep_for(std::chrono::milliseconds(10));
     }
 }
 
+//example of functors
 class Base{
 public: 
     void operator()(int x){
@@ -27,6 +28,11 @@ public:
         }
 
     }   
+
+    static void run2(int x){
+        while(x-- >0)
+            std::cout<<x<<std::endl; 
+    }
 
 }; 
 

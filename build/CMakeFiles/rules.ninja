@@ -42,7 +42,7 @@ rule CXX_EXECUTABLE_LINKER__CPP_MultiThreading_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SF:\CPP_Multithreading_Repo\CPP_Multithreading_Projects -BF:\CPP_Multithreading_Repo\CPP_Multithreading_Projects\build
+  command = "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\user\Documents\Git_Repos\CPP_Multithreading_Projects -BC:\Users\user\Documents\Git_Repos\CPP_Multithreading_Projects\build
   description = Re-running CMake...
   generator = 1
 
@@ -51,7 +51,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = F:\Anaconda\Library\bin\ninja.exe $FILE_ARG -t clean $TARGETS
+  command = C:\Users\user\anaconda3\Library\bin\ninja.exe $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -59,6 +59,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = F:\Anaconda\Library\bin\ninja.exe -t targets
+  command = C:\Users\user\anaconda3\Library\bin\ninja.exe -t targets
   description = All primary targets available:
 

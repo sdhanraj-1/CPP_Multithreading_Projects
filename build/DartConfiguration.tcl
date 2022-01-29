@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: F:/CPP_Multithreading_Repo/CPP_Multithreading_Projects
-BuildDirectory: F:/CPP_Multithreading_Repo/CPP_Multithreading_Projects/build
+SourceDirectory: C:/Users/user/Documents/Git_Repos/CPP_Multithreading_Projects
+BuildDirectory: C:/Users/user/Documents/Git_Repos/CPP_Multithreading_Projects/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: Steven
+Site: DESKTOP-26V71UL
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Win32-ninja
@@ -26,8 +26,8 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" "F:/CPP_Multithreading_Repo/CPP_Multithreading_Projects"
-MakeCommand: "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" "C:/Users/user/Documents/Git_Repos/CPP_Multithreading_Projects"
+MakeCommand: "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control

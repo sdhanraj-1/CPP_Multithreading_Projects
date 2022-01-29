@@ -20,4 +20,9 @@ Move Constructible: specifies that the type can be constructed from rvalue argum
         }
     }; 
 
+- Join vs Detached: 
+join waits for another thread to be completed. Once a thread is started, we wait for the thread to finish.  
+- Use joinable() to check if the thread is joinable before joining or detaching
+- You need ot either detach or join any threads that are there because the destructor of a thread will check if it is joinable and then terminate the program if it is still
+
 Things learned: 
